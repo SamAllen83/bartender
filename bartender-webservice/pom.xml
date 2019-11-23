@@ -17,6 +17,7 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
+        <eventuateClientVersion>0.21.1.RELEASE</eventuateClientVersion>
     </properties>
 
     <dependencies>
@@ -71,6 +72,11 @@
             <artifactId>spring-cloud-starter-contract-verifier</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.eventuate.client.java</groupId>
+            <artifactId>eventuate-client-java-spring</artifactId>
+            <version>${eventuateClientVersion}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -108,6 +114,10 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>jcenter</id>
+            <url>http://jcenter.bintray.com</url>
         </repository>
     </repositories>
     <pluginRepositories>

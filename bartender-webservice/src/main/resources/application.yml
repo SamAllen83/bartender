@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Beverage Bot Bartender Web Service
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${random.value}
