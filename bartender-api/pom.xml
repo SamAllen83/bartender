@@ -9,13 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bevbot.bartender</groupId>
-    <artifactId>webservice</artifactId>
+    <artifactId>bartender-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>webservice</name>
-    <description>Beverage Bot Bartender Web Service</description>
+    <name>bartender-api</name>
+    <description>Beverage Bot Bartender API</description>
 
     <properties>
-        <java.version>11</java.version>
+        <!--<java.version>11</java.version>-->
+        <java.version>8</java.version>
         <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
         <eventuateClientVersion>0.21.1.RELEASE</eventuateClientVersion>
     </properties>

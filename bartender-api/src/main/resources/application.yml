@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Beverage Bot Bartender Web Service
+    name: Beverage Bot Bartender API
   cloud:
     consul:
       discovery:
