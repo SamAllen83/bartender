@@ -1,0 +1,13 @@
+type DrinkOrder {
+  customerName: String
+  drinkName: String
+  orderId: String
+}
+
+type Query {
+  findOrder(orderId: String!) : String
+}
+
+type Mutation {
+  orderDrink(customerName: String!, drinkName: String!) : DrinkOrder!
+}

@@ -1,3 +1,0 @@
-type Drink {
-  name: String
-}
