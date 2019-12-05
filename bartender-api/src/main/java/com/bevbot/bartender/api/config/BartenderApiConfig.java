@@ -1,53 +1,31 @@
 package com.bevbot.bartender.api.config;
 
-//import io.eventuate.AggregateRepository;
-//import io.eventuate.EventuateAggregateStore;
-//import io.eventuate.javaclient.spring.EnableEventHandlers;
-//import org.springframework.boot.autoconfigure.domain.EntityScan;
-//import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-//import org.springframework.http.converter.HttpMessageConverter;
-//import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-//
-//
-//@Configuration
-//@EntityScan("com.bevbot.bartender.api")
-//@EnableJpaRepositories("com.bevbot.bartender.api")
-//@EnableEventHandlers
+import com.bevbot.bartender.api.drink.DrinkOrder;
+import com.bevbot.bartender.api.drink.DrinkOrderCommand;
+import com.bevbot.bartender.api.drink.DrinkService;
+import com.bevbot.bartender.api.drink.DrinkServiceImpl;
+import io.eventuate.javaclient.driver.EventuateDriverConfiguration;
+import io.eventuate.javaclient.spring.EnableEventHandlers;
+import io.eventuate.sync.AggregateRepository;
+import io.eventuate.sync.EventuateAggregateStore;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration
+@Import(EventuateDriverConfiguration.class)
+@EnableEventHandlers
 public class BartenderApiConfig {
-//
-//  @Bean
-//  public TodoEventSubscriber todoEventSubscriber() {
-//    return new TodoEventSubscriber();
-//  }
-//
-//  @Bean
-//  public AggregateRepository<TodoAggregate, TodoCommand> aggregateRepository(EventuateAggregateStore eventStore) {
-//    return new AggregateRepository<>(TodoAggregate.class, eventStore);
-//  }
-//
-//  @Bean
-//  public AggregateRepository<TodoBulkDeleteAggregate, TodoCommand> bulkDeleteAggregateRepository(EventuateAggregateStore eventStore) {
-//    return new AggregateRepository<>(TodoBulkDeleteAggregate.class, eventStore);
-//  }
-//
-//  @Bean
-//  public TodoService updateService(AggregateRepository<TodoAggregate, TodoCommand> aggregateRepository, AggregateRepository<TodoBulkDeleteAggregate, TodoCommand> bulkDeleteAggregateRepository) {
-//    return new TodoService(aggregateRepository, bulkDeleteAggregateRepository);
-//  }
-//
-//  @Bean
-//  public TodoViewServiceImpl commandService(TodoRepository repository) {
-//    return new TodoViewServiceImpl(repository);
-//  }
-//
-//  @Bean
-//  public HttpMessageConverters customConverters() {
-//    HttpMessageConverter<?> additional = new MappingJackson2HttpMessageConverter();
-//    return new HttpMessageConverters(additional);
-//  }
+
+    @Bean
+    public DrinkService orderService(AggregateRepository<DrinkOrder, DrinkOrderCommand> orderRepository) {
+        return new DrinkServiceImpl(orderRepository);
+    }
+
+    @Bean
+    public AggregateRepository<DrinkOrder, DrinkOrderCommand> orderRepository(EventuateAggregateStore eventStore) {
+        return new AggregateRepository<>(DrinkOrder.class, eventStore);
+    }
 }
 
 
