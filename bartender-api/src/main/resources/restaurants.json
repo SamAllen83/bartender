@@ -1,220 +1,220 @@
 [
   {
     "id": "1",
-    "name": "Becky's Burgers",
+    "name": "Moksa Brewing",
     "priceRange": "$$",
-    "imageSrc": "/images/1-burger.jpg",
-    "imageDescription": "A photo of a burger with fries and a milkshake",
-    "description": "Juicy burgers, crunchy fries, and creamy shakes",
+    "imageSrc": "/images/1-Moksa.jpg",
+    "imageDescription": "A photo of two beer",
+    "description": "Famous Lager",
     "menu": [
       {
-        "item": "Cheeseburger",
+        "item": "Ale",
         "price": 9
       },
       {
-        "item": "Milkshake",
+        "item": "Blonde",
         "price": 4
       },
       {
-        "item": "Meal (burger, fries, and shake)",
+        "item": "Lager",
         "price": 15
       }
     ]
   },
   {
     "id": "2",
-    "name": "Chicken Nice",
+    "name": "Out of Bounds Brewing Company",
     "priceRange": "$",
-    "imageSrc": "/images/2-chicken-rice.jpg",
-    "imageDescription": "A photo of Hainanese chicken rice",
-    "description": "The world's best Hainanese Chicken Rice",
+    "imageSrc": "/images/2-outofbounds.jpg",
+    "imageDescription": "A photo of a flight of beers",
+    "description": "Amazing Ales",
     "menu": [
       {
-        "item": "Steamed chicken rice",
+        "item": "IPA",
         "price": 4
       },
       {
-        "item": "Roast chicken rice",
+        "item": "Stout",
         "price": 4
       },
       {
-        "item": "Steamed chicken rice set",
+        "item": "Pilsener",
         "price": 6
       }
     ]
   },
   {
     "id": "3",
-    "name": "Nonna's pizza and pasta",
+    "name": "The Monk’s Cellar",
     "priceRange": "$$",
-    "imageSrc": "/images/3-pizza.jpg",
-    "imageDescription": "A photo of a margherita pizza",
-    "description": "Classic pizza and pasta just like Nonna used to make",
+    "imageSrc": "/images/3-Monks.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Try our old fashion",
     "menu": [
       {
-        "item": "Margherita pizza",
+        "item": "Amber",
         "price": 10
       },
       {
-        "item": "Pepperoni pizza",
+        "item": "Brown",
         "price": 12
       },
       {
-        "item": "Spaghetti bolognese",
+        "item": "Old fashioned",
         "price": 15
       }
     ]
   },
   {
     "id": "4",
-    "name": "Super satay skewers",
+    "name": "Loomis Basin Brewing Company",
     "priceRange": "$$",
-    "imageSrc": "/images/4-satay.jpg",
-    "imageDescription": "A photo of some satay skewers with sauce",
-    "description": "Satay so good it'll save the world",
+    "imageSrc": "/images/4-Loomis.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Great IPAs",
     "menu": [
       {
-        "item": "10 chicken satay",
+        "item": "IPA",
         "price": 7
       },
       {
-        "item": "10 mutton satay",
+        "item": "Stout",
         "price": 7
       },
       {
-        "item": "10 beef satay",
+        "item": "Blonde",
         "price": 7
       }
     ]
   },
   {
     "id": "5",
-    "name": "Curry delights",
+    "name": "Palm Tree Brewing",
     "priceRange": "$$$",
-    "imageSrc": "/images/5-curry.jpg",
-    "imageDescription": "A photo of Indian curries",
-    "description": "The best Indian curries from the freshest ingredients",
+    "imageSrc": "/images/5-Palm.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Beer to relax",
     "menu": [
       {
-        "item": "Dal fry",
+        "item": "Pilsner",
         "price": 8
       },
       {
-        "item": "Garlic Naan",
+        "item": "Honey Mead",
         "price": 3
       },
       {
-        "item": "Paneer Makhani ",
+        "item": "Lager",
         "price": 15
       }
     ]
   },
   {
     "id": "6",
-    "name": "Sliced",
+    "name": "Kathrin’s Biergarten",
     "priceRange": "$",
-    "imageSrc": "/images/6-sandwich.jpg",
-    "imageDescription": "A photo of a sandwich",
-    "description": "Fresh sandwiches at great prices",
+    "imageSrc": "/images/6-Kathrins.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Feel at home at Kathrin's",
     "menu": [
       {
-        "item": "BLT (bacon, lettuce, tomato)",
+        "item": "IPA",
         "price": 7
       },
       {
-        "item": "Warm chicken sandwich",
+        "item": "Wheat",
         "price": 6
       },
       {
-        "item": "Chicken caesar salad",
+        "item": "Stout",
         "price": 5
       }
     ]
   },
   {
     "id": "7",
-    "name": "Taste of Iberia",
+    "name": "Boneshaker Public House",
     "priceRange": "$$$$",
-    "imageSrc": "/images/7-paella.jpg",
-    "imageDescription": "A photo of Spanish Paella",
-    "description": "Paella, tapas, and imported Spanish wines",
+    "imageSrc": "/images/7-Boneshaker.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "World famous beer",
     "menu": [
       {
-        "item": "Seafood paella",
+        "item": "Double IPA",
         "price": 25
       },
       {
-        "item": "Mixed tapas",
+        "item": "Porter",
         "price": 27
       },
       {
-        "item": "2012 Barbazul (Red)",
+        "item": "Crown Ambassador Reserve",
         "price": 70
       }
     ]
   },
   {
     "id": "8",
-    "name": "Crunchy Crunch",
+    "name": "Rocklin Brewfest",
     "priceRange": "$$",
-    "imageSrc": "/images/8-fried-chicken.jpg",
-    "imageDescription": "A photo of crispy fried chicken",
-    "description": "The city's best Southern-style fried chicken",
+    "imageSrc": "/images/8-Rocklin.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Good times!",
     "menu": [
       {
-        "item": "6 pc. chicken",
+        "item": "American Lager",
         "price": 12
       },
       {
-        "item": "6 pc. boneless chicken",
+        "item": "Wheat",
         "price": 15
       },
       {
-        "item": "2 pc. biscuits",
+        "item": "Porter",
         "price": 5
       }
     ]
   },
   {
     "id": "9",
-    "name": "Japan's finest",
+    "name": "The Filling Station",
     "priceRange": "$$$",
-    "imageSrc": "/images/9-sushi.jpg",
-    "imageDescription": "A photo of sushi and sashimi",
-    "description": "Only the freshest fish and tastiest katsu",
+    "imageSrc": "/images/9-FillingStation.png",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Take one togo!",
     "menu": [
       {
-        "item": "Mixed sushi platter",
+        "item": "IPA",
         "price": 20
       },
       {
-        "item": "Mixed sashimi platter",
+        "item": "American Lager",
         "price": 20
       },
       {
-        "item": "Chicken katsu curry set",
+        "item": "Ale",
         "price": 18
       }
     ]
   },
   {
     "id": "10",
-    "name": "Chippo's",
+    "name": "BJ’s Restaurant & Brewhouse",
     "priceRange": "$",
-    "imageSrc": "/images/10-fish-n-chips.jpg",
-    "imageDescription": "A photo of deep-fried fish with thick-cut hot chips",
-    "description": "Authentic Aussie-style fish n chips",
+    "imageSrc": "/images/10-bjs.jpg",
+    "imageDescription": "A photo of a cold beer",
+    "description": "Good food, good beer, good times",
     "menu": [
       {
-        "item": "Fish n chips for 1",
+        "item": "Red",
         "price": 8
       },
       {
-        "item": "Potato cake",
+        "item": "IPA",
         "price": 1
       },
       {
-        "item": "Dim sim",
+        "item": "American Lager",
         "price": 1
       }
     ]
