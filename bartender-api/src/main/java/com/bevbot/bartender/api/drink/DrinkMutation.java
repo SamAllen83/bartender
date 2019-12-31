@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.UUID;
-
 @Component
 public class DrinkMutation implements GraphQLMutationResolver {
     private static final Logger LOGGER = LoggerFactory.getLogger(DrinkMutation.class);
@@ -21,6 +19,8 @@ public class DrinkMutation implements GraphQLMutationResolver {
         EntityWithIdAndVersion<DrinkOrder> drinkOrder = drinkService.createOrder(customerName, drinkName, new Money(5));
         String orderId = drinkOrder.getEntityId();
         LOGGER.info("Order created.  Customer {} drink {} orderId {}", customerName, drinkName, orderId);
-        return drinkOrder.getAggregate();
+        DrinkOrder result = drinkOrder.getAggregate();
+        LOGGER.info("Drink order: {}", result);
+        return result;
     }
 }

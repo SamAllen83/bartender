@@ -1,0 +1,21 @@
+#Environment override
+spring:
+  datasource:
+    username: mysqluser
+    password: mysqlpw
+    url: jdbc:mysql://localhost:30306/eventuate
+  cloud:
+    config:
+      uri: http://localhost:30888
+eventuatelocal:
+  cdc:
+    db:
+      user:
+        name: root
+      password: rootpassword
+  kafka:
+    bootstrap:
+      servers: localhost:30092
+  zookeeper:
+    connection:
+      string: localhost:30181

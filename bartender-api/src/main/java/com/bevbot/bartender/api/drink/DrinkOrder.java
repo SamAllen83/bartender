@@ -21,4 +21,9 @@ public class DrinkOrder extends ReflectiveMutableCommandProcessingAggregate<Drin
         this.customerName = event.getCustomerName();
     }
 
+    @Override
+    public String toString() {
+        return "DrinkOrder{" + "customerName='" + customerName + '\'' + ", drinkName='" + drinkName + '\'' + ", orderId='" + orderId + '\'' + "} " + super
+                .toString();
+    }
 }

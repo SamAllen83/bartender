@@ -1,6 +1,23 @@
 spring:
   application:
     name: Beverage Bot Bartender API
+  #Default, override for environment
+  profiles:
+    active: local
+  datasource:
+    #Environment override required
+    username:
+    #Environment override required
+    password:
+    #Environment override required
+    url:
+    driver:
+      class:
+        name: com.mysql.jdbc.Driver
+  cloud:
+    config:
+      #Environment override required
+      uri:
 logging:
   level:
     root: INFO
@@ -9,3 +26,19 @@ management:
     enabled-by-default: true
 server:
   port: 8080
+eventuatelocal:
+  cdc:
+    db:
+      user:
+        #Environment override required
+        name:
+      #Environment override required
+      password:
+  kafka:
+    bootstrap:
+      #Environment override required
+      servers:
+  zookeeper:
+    connection:
+      #Environment override required
+      string:

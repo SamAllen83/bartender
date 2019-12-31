@@ -4,8 +4,24 @@ type DrinkOrder {
   orderId: String
 }
 
+type Restaurant {
+    id: String
+    name: String
+    priceRange: String
+    imageSrc: String
+    imageDescription: String
+    description: String
+    menu: [MenuItem]
+}
+
+type MenuItem {
+    item: String
+    price: Int
+}
+
 type Query {
   findOrder(orderId: String!) : String
+  getRestaurants : [Restaurant]
 }
 
 type Mutation {
