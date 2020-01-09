@@ -14,10 +14,6 @@ spring:
     driver:
       class:
         name: com.mysql.jdbc.Driver
-  cloud:
-    config:
-      #Environment override required
-      uri:
 logging:
   level:
     root: INFO

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: bartender-api
+  cloud:
+    config:
+      #Environment override required
+      uri:

@@ -4,9 +4,6 @@ spring:
     username: mysqluser
     password: mysqlpw
     url: jdbc:mysql://localhost:30306/eventuate
-  cloud:
-    config:
-      uri: http://localhost:30888
 eventuatelocal:
   cdc:
     db:

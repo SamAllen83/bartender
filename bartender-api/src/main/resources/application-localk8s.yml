@@ -3,10 +3,7 @@ spring:
   datasource:
     username: mysqluser
     password: mysqlpw
-    url: jdbc:mysql://mysql/eventuate
-  cloud:
-    config:
-      uri: http://localhost:8888
+    url: jdbc:mysql://mysql.default.svc.cluster.local/eventuate
 eventuatelocal:
   cdc:
     db:
@@ -15,7 +12,7 @@ eventuatelocal:
       password: rootpassword
   kafka:
     bootstrap:
-      servers: kafka:9092
+      servers: kafka.default.svc.cluster.local:9092
   zookeeper:
     connection:
-      string: zookeeper:2181
+      string: zookeeper.default.svc.cluster.local:2181
